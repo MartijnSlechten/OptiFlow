@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v8.0": {
+    "MonoAndroid,Version=v7.1": {
       "Xamarin.Android.Support.Animated.Vector.Drawable/25.4.0.2": {
         "type": "package",
         "dependencies": {
@@ -678,7 +678,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v8.0": [
+    "MonoAndroid,Version=v7.1": [
       "Xamarin.Android.Support.Design >= 25.4.0.2",
       "Xamarin.Android.Support.v4 >= 25.4.0.2",
       "Xamarin.Android.Support.v7.AppCompat >= 25.4.0.2",
@@ -688,66 +688,61 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Martijn\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\Ellen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project4.0\\Optiflow\\Optiflow\\Optiflow.Android\\Optiflow.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\Optiflow\\Optiflow.Android\\Optiflow.Android.csproj",
       "projectName": "Optiflow.Android",
-      "projectPath": "C:\\Project4.0\\Optiflow\\Optiflow\\Optiflow.Android\\Optiflow.Android.csproj",
-      "packagesPath": "C:\\Users\\Martijn\\.nuget\\packages\\",
-      "outputPath": "C:\\Project4.0\\Optiflow\\Optiflow\\Optiflow.Android\\obj\\",
+      "projectPath": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\Optiflow\\Optiflow.Android\\Optiflow.Android.csproj",
+      "packagesPath": "C:\\Users\\Ellen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\Optiflow\\Optiflow.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Martijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid80"
+        "monoandroid71"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "monoandroid80": {
+        "monoandroid71": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "monoandroid80": {
+      "monoandroid71": {
         "dependencies": {
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "2.5.0.122203"
+          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
-            "version": "[25.4.0.2, )"
-          },
-          "Xamarin.Android.Support.v4": {
-            "target": "Package",
-            "version": "[25.4.0.2, )"
+            "version": "25.4.0.2"
           },
           "Xamarin.Android.Support.v7.AppCompat": {
             "target": "Package",
-            "version": "[25.4.0.2, )"
+            "version": "25.4.0.2"
+          },
+          "Xamarin.Android.Support.v4": {
+            "target": "Package",
+            "version": "25.4.0.2"
           },
           "Xamarin.Android.Support.v7.CardView": {
             "target": "Package",
-            "version": "[25.4.0.2, )"
+            "version": "25.4.0.2"
           },
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
-            "version": "[25.4.0.2, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[2.5.0.122203, )"
+            "version": "25.4.0.2"
           }
         }
       }
