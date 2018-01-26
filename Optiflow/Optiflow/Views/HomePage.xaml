@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Optiflow.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Optiflow" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <ContentView Padding="20" VerticalOptions="FillAndExpand">
+                <Image x:Name="chart1"/>
+            </ContentView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -5784,7 +5784,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "6L3j/K+ym98eTDu7jDv8OFgoRgqCVLX1G85BLxtmc0/eiD7gGgQircgCbfp+TqhDpx3rrsTl4i4wZUJc9Ac9eQ==",
+      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -9596,7 +9596,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "ws3iWUDPC211cvz9m9kJ0KJAKyj43flNEY5HsEck/PJP5KPBqyaw2shum7MrSGdNcUAUjiprt5PTBse9iD9aDw==",
+      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -12535,7 +12535,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Martijn\\.nuget\\packages\\": {},
+    "C:\\Users\\Tom\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -12545,18 +12545,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Project4.0\\Optiflow\\OptiflowApi\\OptiflowApi.csproj",
+      "projectUniqueName": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\OptiflowApi\\OptiflowApi.csproj",
       "projectName": "OptiflowApi",
-      "projectPath": "C:\\Project4.0\\Optiflow\\OptiflowApi\\OptiflowApi.csproj",
-      "packagesPath": "C:\\Users\\Martijn\\.nuget\\packages\\",
-      "outputPath": "C:\\Project4.0\\Optiflow\\OptiflowApi\\obj\\",
+      "projectPath": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\OptiflowApi\\OptiflowApi.csproj",
+      "packagesPath": "C:\\Users\\Tom\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\OptiflowApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Martijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

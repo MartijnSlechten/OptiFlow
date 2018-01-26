@@ -696,24 +696,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Martijn\\.nuget\\packages\\": {},
+    "C:\\Users\\Tom\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project4.0\\Optiflow\\Optiflow\\Optiflow.iOS\\Optiflow.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\Optiflow\\Optiflow.iOS\\Optiflow.iOS.csproj",
       "projectName": "Optiflow.iOS",
-      "projectPath": "C:\\Project4.0\\Optiflow\\Optiflow\\Optiflow.iOS\\Optiflow.iOS.csproj",
-      "packagesPath": "C:\\Users\\Martijn\\.nuget\\packages\\",
-      "outputPath": "C:\\Project4.0\\Optiflow\\Optiflow\\Optiflow.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\Optiflow\\Optiflow.iOS\\Optiflow.iOS.csproj",
+      "packagesPath": "C:\\Users\\Tom\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\Optiflow\\Optiflow.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Martijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
