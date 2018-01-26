@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll
 C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.pdb
 C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow.apk
@@ -108,3 +109,40 @@ obj\Debug\linksrc\System.Runtime.Serialization.pdb
 obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 obj\Debug\linksrc\Mono.Security.pdb
 obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+=======
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.pdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow.apk
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow-Signed.apk
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csprojResolveAssemblyReference.cache
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csproj.CoreCompileInputs.cache
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.App.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.MainPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.AboutPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemDetailPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemsPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.NewItemPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.dll
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.pdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\bin\com.companyname.Optiflow.apk
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable-hdpi\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\layout\tabbar.xml
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\layout\toolbar.xml
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\values\styles.xml
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable\xamarin_logo.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\R.cs.flag
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\uploadflags.txt
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\FormsViewGroup.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Optiflow.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+>>>>>>> cf9d718915e018d97e2d38aba134422a1514cb94
