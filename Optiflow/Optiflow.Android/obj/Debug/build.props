@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 BundleAssemblies=False
 AotAssemblies=False
 AndroidAotMode=
@@ -19,3 +20,26 @@ TargetFrameworkVersion=v7.1
 AndroidCreatePackagePerAbi=
 OS=Windows_NT
 DesignTimeBuild=
+=======
+BundleAssemblies=false
+AotAssemblies=false
+AndroidAotMode=
+ExplicitCrunch=False
+EnableProguard=
+UseSharedRuntime=true
+EmbedAssembliesIntoApk=False
+AndroidLinkMode=None
+AndroidLinkSkip=
+AndroidSdkBuildToolsVersion=23.0.0
+AndroidSdkPath=
+AndroidNdkPath=
+JavaSdkPath=
+AndroidSequencePointsMode=None
+XamarinAndroidVersion=8.0.2-1
+MonoSymbolArchive=False
+AndroidUseLatestPlatformSdk=false
+TargetFrameworkVersion=v7.1
+AndroidCreatePackagePerAbi=
+OS=Windows_NT
+DesignTimeBuild=
+>>>>>>> cf9d718915e018d97e2d38aba134422a1514cb94
