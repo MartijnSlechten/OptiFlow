@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Optiflow.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="50">
+            <Label Text="Optiflow" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="Username" />
+            <Entry x:Name="usernameEntry" Text="{Binding username}"/>
+            <Label Text="Password" />
+            <Entry x:Name="passwordEntry" IsPassword="true" Text="{Binding password}"/>
+            <Button Text="Login" Clicked="Login_Clicked"/>
+            <Label x:Name="messageLabel" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
