@@ -73,7 +73,7 @@ namespace Optiflow.Views
                         Icon = "icon3.png"
                     };
 
-                    exercisesPage = new NavigationPage(new ExercisesPage())
+                    exercisesPage = new ExercisesPage()
                     {
                         Title = "Exercises",
                         Icon = "icon10.png"

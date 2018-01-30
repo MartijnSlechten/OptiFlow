@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,15 +13,43 @@ namespace Optiflow.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ExercisesPage : ContentPage
 	{
-		public ExercisesPage ()
-		{
-			InitializeComponent ();
-            star.Source = ImageSource.FromFile("star.png");
+        public ObservableCollection<ImageCell> Items { get; set; }
+
+        public ExercisesPage()
+        {
+            InitializeComponent();
+
+            Items = new ObservableCollection<ImageCell>
+            {
+                new ImageCell
+                {
+                    ImageSource = "icon7.png",
+                    Text = "Exercise 1"
+                },
+                new ImageCell
+                {
+                    ImageSource = "icon8.png",
+                    Text = "Exercise 2"
+                },
+                new ImageCell
+                {
+                    ImageSource = "icon9.png",
+                    Text = "Exercise 3"
+                }
+            };
+
+            Exercises.ItemsSource = Items;
         }
 
-        async void Test_Clicked(object sender, EventArgs e)
+        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            await fan.RotateTo(10000, 10000, Easing.SinIn);
+            if (e.Item == null)
+                return;
+
+            await Navigation.PushAsync(new NavigationPage(new ExercisePage()));
+
+            //Deselect Item
+            ((ListView)sender).SelectedItem = null;
         }
     }
 }

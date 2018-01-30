@@ -5,9 +5,14 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
             <Label Text="Exercises" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            <ContentView Padding="20" VerticalOptions="FillAndExpand" >
-                <Image x:Name="star"/>
-            </ContentView>
+
+            <ListView x:Name="Exercises" ItemsSource="{Binding Items}" ItemTapped="Handle_ItemTapped" CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding ImageSource}" Text="{Binding Text}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

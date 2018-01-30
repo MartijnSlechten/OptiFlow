@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Optiflow.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SettingsPage : ContentPage
+	public partial class ExercisePage : ContentPage
 	{
-		public SettingsPage ()
+		public ExercisePage ()
 		{
 			InitializeComponent ();
 		}
-
-        async void Changed_Clicked(object sender, EventArgs e)
-        {
-            await DisplayAlert("Password Changed", "Your password has succesfully been changed", "OK");
-        }
-    }
+	}
 }

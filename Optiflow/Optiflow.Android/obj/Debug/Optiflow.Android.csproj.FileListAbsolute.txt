@@ -71,6 +71,12 @@ C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.And
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon4.png
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\fan.png
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.StatsPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ExercisesPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon10.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon9.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon8.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon7.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\star.png
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll.mdb
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
@@ -81,4 +87,5 @@ C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.And
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ExercisePage.xaml.g.cs
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.dll.mdb
