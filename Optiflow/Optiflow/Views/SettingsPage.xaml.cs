@@ -19,7 +19,7 @@ namespace Optiflow.Views
 
         async void Changed_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new TabbedPage()));
+            await DisplayAlert("Password Changed", "Your password has succesfully been changed", "OK");
         }
     }
 }

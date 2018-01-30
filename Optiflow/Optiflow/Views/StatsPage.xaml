@@ -6,7 +6,7 @@
         <StackLayout VerticalOptions="Center">
             <Label Text="Stats" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
             <ContentView Padding="20" VerticalOptions="FillAndExpand" >
-                <Image x:Name="chart1"/>
+                <Image x:Name="chart2"/>
             </ContentView>
         </StackLayout>
     </ContentPage.Content>

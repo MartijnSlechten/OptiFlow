@@ -2694,7 +2694,7 @@ namespace Optiflow.Droid
 			public const int icon5 = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int icon6 = 2130837749;
+			public const int icon7 = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
 			public const int icon8 = 2130837750;

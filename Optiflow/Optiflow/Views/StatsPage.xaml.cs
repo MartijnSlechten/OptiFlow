@@ -15,7 +15,7 @@ namespace Optiflow.Views
 		public StatsPage ()
 		{
 			InitializeComponent ();
-            chart1.Source = ImageSource.FromFile("chart1.jpg");
+            chart2.Source = ImageSource.FromFile("chart1.jpg");
         }
     }
 }

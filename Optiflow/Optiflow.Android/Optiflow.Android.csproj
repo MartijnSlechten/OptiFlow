@@ -118,7 +118,7 @@
     <AndroidResource Include="Resources\drawable\icon8.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon6.png" />
+    <AndroidResource Include="Resources\drawable\icon7.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\star.png" />
