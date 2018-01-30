@@ -9,3 +9,14 @@ C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\OptiflowApi\obj\Debug
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.AssemblyInfo.cs
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.dll
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.pdb
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\bin\Debug\netcoreapp2.0\OptiflowApi.deps.json
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\bin\Debug\netcoreapp2.0\OptiflowApi.runtimeconfig.json
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\bin\Debug\netcoreapp2.0\OptiflowApi.runtimeconfig.dev.json
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\bin\Debug\netcoreapp2.0\OptiflowApi.dll
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\bin\Debug\netcoreapp2.0\OptiflowApi.pdb
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.csprojResolveAssemblyReference.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.csproj.CoreCompileInputs.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.AssemblyInfoInputs.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.AssemblyInfo.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.dll
+C:\Users\Ellen\Xamarin\Optiflow-team\OptiflowApi\obj\Debug\netcoreapp2.0\OptiflowApi.pdb

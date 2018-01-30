@@ -2969,7 +2969,7 @@
   },
   "libraries": {
     "Microsoft.Net.Native.Compiler/2.0.0": {
-      "sha512": "LOVoWPYT9iJu7/CKsWt6hm5b2FSCfuJAOD1CUEoa0OEL1xR3THY+NPtRL57jmV6gVZOIiuw7iro60r4MV6sODA==",
+      "sha512": "fY/kWT70qhS8fpKqFzr23FmeWr8UsQJUESDyIeT4U4197ZWWcQ4rQdkHqD4tvb1SMqAuWaFbAkTmNbfEP37UJQ==",
       "type": "package",
       "path": "microsoft.net.native.compiler/2.0.0",
       "files": [
@@ -4943,7 +4943,7 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
-      "sha512": "2RI4q8FfR0S50V4YdZIZtzfyA2Bo4+jJHQXG+TDN7D4mPrFiIswIq8HVeDWS9xZsDwz23z7d/T2qi4rZa60Sig==",
+      "sha512": "svqEclOg2g3pmsVen1/sCCsozefwISlHQcB/Y5yxqovG6tx+LIxN0XtGH4XSieLbf5PbzVIXmHoPPrWb0QhuaA==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
@@ -6658,26 +6658,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tom\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\Ellen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\Optiflow\\Optiflow.UWP\\Optiflow.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\Optiflow\\Optiflow.UWP\\Optiflow.UWP.csproj",
       "projectName": "Optiflow.UWP",
-      "projectPath": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\Optiflow\\Optiflow.UWP\\Optiflow.UWP.csproj",
-      "packagesPath": "C:\\Users\\Tom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\Optiflow\\Optiflow.UWP\\obj\\",
+      "projectPath": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\Optiflow\\Optiflow.UWP\\Optiflow.UWP.csproj",
+      "packagesPath": "C:\\Users\\Ellen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\Optiflow\\Optiflow.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Tom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.16299"
@@ -6695,13 +6690,13 @@
     "frameworks": {
       "uap10.0.16299": {
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": {
-            "target": "Package",
-            "version": "[6.0.1, )"
-          },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[2.5.0.122203, )"
+            "version": "2.5.0.122203"
+          },
+          "Microsoft.NETCore.UniversalWindowsPlatform": {
+            "target": "Package",
+            "version": "6.0.1"
           }
         },
         "imports": [
