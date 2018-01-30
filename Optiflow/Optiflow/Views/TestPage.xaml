@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Optiflow.Views.TestPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="50">
+            <Label Text="Test" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <ContentView Padding="20" VerticalOptions="FillAndExpand">
+                <Image x:Name="fan"/>
+            </ContentView>
+            <Button Text="Test" Clicked="Test_Clicked"/>
+            <Label x:Name="Test" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
