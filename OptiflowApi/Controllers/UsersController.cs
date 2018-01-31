@@ -125,6 +125,7 @@ namespace OptiflowApi.Controllers
         {
             int tellerExists = 0;
             int teller = 0;
+            int count = 0;
             long id = 0;
             User insertedUser = new User();
 
@@ -154,14 +155,21 @@ namespace OptiflowApi.Controllers
                 foreach (User foundUser in tableQueryResultAll)
                 {
                     id = foundUser.Id;
+                    count++;
                 }
 
-                // Create a new customer entity.
-                User newUser = new User(id, user.FirstName, user.LastName, user.Email);
+                if (count > 0)
+                {
+                    id++;
+                }
+
+                // Create a new user entity
+                User newUser = new User(id, user.FirstName, user.LastName, user.Email, user.Password);
                 newUser.Id = id;
                 newUser.LastName = user.LastName;
                 newUser.FirstName = user.FirstName;
                 newUser.Email = user.Email;
+                newUser.Password = user.Password;
 
                 // Create the TableOperation object that inserts the user
                 TableOperation insertOperation = TableOperation.Insert(newUser);
@@ -243,6 +251,7 @@ namespace OptiflowApi.Controllers
                     updatedUser.LastName = user.LastName;
                     updatedUser.FirstName = user.FirstName;
                     updatedUser.Email = user.Email;
+                    updatedUser.Password = user.Password;
 
                     // Create the TableOperation object that updates the user
                     TableOperation updateOperation = TableOperation.Replace(updatedUser);
@@ -310,6 +319,7 @@ namespace OptiflowApi.Controllers
                     updatedUser.LastName = user.LastName;
                     updatedUser.FirstName = user.FirstName;
                     updatedUser.Email = user.Email;
+                    updatedUser.Password = user.Password;
 
                     // Create the TableOperation object that updates the user
                     TableOperation updateOperation = TableOperation.Replace(updatedUser);

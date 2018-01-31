@@ -2992,7 +2992,7 @@ containing a value of this type.
         public static final int icon3=0x7f0200f2;
         public static final int icon4=0x7f0200f3;
         public static final int icon5=0x7f0200f4;
-        public static final int icon6=0x7f0200f5;
+        public static final int icon7=0x7f0200f5;
         public static final int icon8=0x7f0200f6;
         public static final int icon9=0x7f0200f7;
         public static final int mr_button_connected_dark=0x7f0200f8;

@@ -42,7 +42,7 @@ namespace OptiflowApi.Controllers
 
         // GET api/sensordata
         [HttpGet]
-        public async Task<IActionResult> GetSensordata()
+        public async Task<IActionResult> GetAllSensordata()
         {
             List<Sensordata> data = new List<Sensordata>();
 
@@ -51,7 +51,7 @@ namespace OptiflowApi.Controllers
 
             TableQuerySegment<Sensordata> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
 
-            //add found person to list persons
+            //add found record to list data
             foreach (Sensordata foundData in tableQueryResult)
             {
                 data.Add(foundData);
@@ -67,12 +67,12 @@ namespace OptiflowApi.Controllers
             int teller = 0;
             Sensordata dataRecord = new Sensordata();
 
-            // Construct the query operation to find user
+            // Construct the query operation to find datarecord
             TableQuery<Sensordata> query = new TableQuery<Sensordata>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
 
             TableQuerySegment<Sensordata> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
 
-            //check if user exists
+            //check if datarecord exists
             foreach (Sensordata foundData in tableQueryResult)
             {
                 teller++;
@@ -94,6 +94,7 @@ namespace OptiflowApi.Controllers
         public async Task<IActionResult> CreateData([FromBody]Sensordata dataRecord)
         {
             int teller = 0;
+            int count = 0;
             long id = 0;
             Sensordata insertedData = new Sensordata();
 
@@ -106,22 +107,28 @@ namespace OptiflowApi.Controllers
             foreach (Sensordata foundData in tableQueryResultAll)
             {
                 id = foundData.Id;
+                count++;
+            }
+
+            if (count > 0)
+            {
+                id++;
             }
             
-            // Create a new customer entity.
-            Sensordata newRecord = new Sensordata(id, dataRecord.Tijd, dataRecord.Flow, dataRecord.Volume);
+            // Create a new sensordata entity
+            Sensordata newRecord = new Sensordata(id, dataRecord.Time, dataRecord.Flow, dataRecord.Volume);
             newRecord.Id = id;
-            newRecord.Tijd = dataRecord.Tijd;
+            newRecord.Time = dataRecord.Time;
             newRecord.Flow = dataRecord.Flow;
             newRecord.Volume = dataRecord.Volume;
 
-            // Create the TableOperation object that inserts the user
+            // Create the TableOperation object that inserts the datarecord
             TableOperation insertOperation = TableOperation.Insert(newRecord);
 
             // Execute the insert operation
             await table.ExecuteAsync(insertOperation);
 
-            // Construct the query operation to find the new user
+            // Construct the query operation to find the new datarecord
             TableQuery<Sensordata> query = new TableQuery<Sensordata>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
 
             TableQuerySegment<Sensordata> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
@@ -142,16 +149,79 @@ namespace OptiflowApi.Controllers
             }
         }
 
-        // PUT api/values/5
+        // PUT api/sensordata/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public async Task<IActionResult> UpdateData(long id, [FromBody]Sensordata dataRecord)
         {
+            int teller = 0;
+            Sensordata dataToUpdate = new Sensordata();
+
+            // Construct the query operation to find datarecord
+            TableQuery<Sensordata> query = new TableQuery<Sensordata>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
+
+            TableQuerySegment<Sensordata> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
+
+            //check if datarecord exists
+            foreach (Sensordata foundData in tableQueryResult)
+            {
+                teller++;
+                dataToUpdate = foundData;
+            }
+
+            if (teller > 0)
+            {
+                Sensordata updatedData = dataToUpdate;
+                updatedData.Time = dataRecord.Time;
+                updatedData.Flow = dataRecord.Flow;
+                updatedData.Volume = dataRecord.Volume;
+
+                // Create the TableOperation object that updates the user
+                TableOperation updateOperation = TableOperation.Replace(updatedData);
+
+                // Execute the update operation
+                await table.ExecuteAsync(updateOperation);
+
+                return Ok(updatedData);
+            }
+            else
+            {
+                return NotFound(null);
+            }
         }
 
-        // DELETE api/values/5
+        // DELETE api/sensordata/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> DeleteData(long id)
         {
+            int teller = 0;
+            Sensordata data = new Sensordata();
+
+            // Construct the query operation
+            TableQuery<Sensordata> query = new TableQuery<Sensordata>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
+
+            TableQuerySegment<Sensordata> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
+
+            //check if user exists
+            foreach (Sensordata foundData in tableQueryResult)
+            {
+                teller++;
+                data = foundData;
+            }
+
+            if (teller > 0)
+            {
+                // Create the TableOperation object that deletes the user
+                TableOperation deleteOperation = TableOperation.Delete(data);
+
+                // Execute the delete operation
+                await table.ExecuteAsync(deleteOperation);
+
+                return Ok(data);
+            }
+            else
+            {
+                return NotFound(null);
+            }
         }
     }
 }

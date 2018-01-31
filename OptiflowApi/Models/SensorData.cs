@@ -15,12 +15,12 @@ namespace OptiflowApi.Models
             this.Id = id;
         }
 
-        public Sensordata(long id, DateTime tijd, double flow, double volume)
+        public Sensordata(long id, DateTime time, double flow, double volume)
         {
             this.PartitionKey = id.ToString();
             this.RowKey = id.ToString();
             this.Id = id;
-            this.Tijd = tijd;
+            this.Time = time;
             this.Flow = Flow;
             this.Volume = Volume;
         }
@@ -29,7 +29,7 @@ namespace OptiflowApi.Models
 
         public long Id { get; set; }
 
-        public DateTime Tijd { get; set; }
+        public DateTime Time { get; set; }
 
         public double Flow { get; set; }
 

@@ -15,7 +15,7 @@ namespace OptiflowApi.Models
             this.Id = id;
         }
 
-        public User(long id, string firstName, string lastName, string email)
+        public User(long id, string firstName, string lastName, string email, string password)
         {
             this.PartitionKey = id.ToString();
             this.RowKey = id.ToString();
@@ -23,6 +23,7 @@ namespace OptiflowApi.Models
             this.FirstName = firstName;
             this.LastName = lastName;
             this.Email = email;
+            this.Password = password;
         }
 
         public User() { }
@@ -34,5 +35,7 @@ namespace OptiflowApi.Models
         public string FirstName { get; set; }
 
         public string Email { get; set; }
+
+        public string Password { get; set; }
     }
 }
