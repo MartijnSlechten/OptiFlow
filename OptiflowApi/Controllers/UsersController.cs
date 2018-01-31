@@ -40,59 +40,7 @@ namespace OptiflowApi.Controllers
             await table.CreateIfNotExistsAsync();
         }
 
-        // GET api/users
-        [HttpGet]
-        public async Task<IActionResult> GetUsers()
-        {
-            List<User> users = new List<User>();
-
-            // Construct the query operation
-            TableQuery<User> query = new TableQuery<User>();
-
-            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
-            //add found person to list persons
-            foreach (User foundUser in tableQueryResult)
-            {
-                users.Add(foundUser);
-            }
-
-            return Ok(users);
-        }
-
-        // GET api/users/byEmail/user@email.com
-        [Route("api/users/byEmail/{email}")]
-        [HttpGet]
-        public async Task<IActionResult> GetUserByEmail(string email)
-        {
-            int teller = 0;
-            User user = new User();
-
-            // Construct the query operation to find user
-            TableQuery<User> query = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, email));
-
-            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
-            //check if user exists
-            foreach (User foundUser in tableQueryResult)
-            {
-                teller++;
-                user = foundUser;
-            }
-
-            if (teller > 0)
-            {
-                return Ok(user);
-            }
-            else
-            {
-                return NotFound(null);
-            }
-        }
-
-        // GET api/users/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetUserById(long id)
+        public async Task<User> FindUserById(long id)
         {
             int teller = 0;
             User user = new User();
@@ -111,56 +59,148 @@ namespace OptiflowApi.Controllers
 
             if (teller > 0)
             {
-                return Ok(user);
+                return user;
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
+        }
+
+        public async Task<User> FindUserByEmail(string email)
+        {
+            int teller = 0;
+            User user = new User();
+
+            // Construct the query operation to find user
+            TableQuery<User> query = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, email));
+
+            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
+
+            //check if user exists
+            foreach (User foundUser in tableQueryResult)
+            {
+                teller++;
+                user = foundUser;
+            }
+
+            if (teller > 0)
+            {
+                return user;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public async Task<int> CountUsers()
+        {
+            int count = 0;
+            List<User> users = await GetUsers();
+
+            foreach (User user in users)
+            {
+                count++;
+            }
+
+            return count;
+        }
+
+        public async Task<User> GetLastUser()
+        {
+            User lastUser = new User();
+            int count = await CountUsers();
+
+            if (count > 0)
+            {
+                List<User> users = await GetUsers();
+
+                //get last user
+                foreach (User user in users)
+                {
+                    lastUser = user;
+                }
+
+                return lastUser;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+        public async Task<bool> AuthenticateUser(string email, string password)
+        {
+            User foundUser = await GetUserByEmail(email);
+
+            if (foundUser.Password.Equals(password))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        // GET api/users
+        [HttpGet]
+        public async Task<List<User>> GetUsers()
+        {
+            List<User> users = new List<User>();
+
+            // Construct the query operation
+            TableQuery<User> query = new TableQuery<User>();
+
+            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
+
+            //add found person to list persons
+            foreach (User foundUser in tableQueryResult)
+            {
+                users.Add(foundUser);
+            }
+
+            return users;
+        }
+
+        // GET api/users/byEmail/user@email.com
+        [Route("api/users/byEmail/{email}")]
+        [HttpGet]
+        public async Task<User> GetUserByEmail(string email)
+        {
+            return await FindUserByEmail(email);
+        }
+
+        // GET api/users/5
+        [HttpGet("{id}")]
+        public async Task<User> GetUserById(long id)
+        {
+            return await FindUserById(id); ;
         }
 
         // POST api/users
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody]User user)
+        public async Task<User> CreateUser([FromBody]User user)
         {
-            int tellerExists = 0;
-            int teller = 0;
-            int count = 0;
             long id = 0;
-            User insertedUser = new User();
 
-            // Construct the query operation to check if user with e-mail already exists
-            TableQuery<User> queryExists = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, user.Email));
+            //check is user with provided e-mailadress already exists
+            User foundUser = await FindUserByEmail(user.Email);
 
-            TableQuerySegment<User> tableQueryResultExists = await table.ExecuteQuerySegmentedAsync(queryExists, null);
-
-            //check if user exists
-            foreach (User foundUser in tableQueryResultExists)
-            {
-                tellerExists++;
-            }
-
-            if (tellerExists > 0)
+            if (foundUser != null)
             {
                 throw new Exception("User with e-mail already exists!");
             }
             else
             {
-                // Construct the query operation to get all users
-                TableQuery<User> queryAll = new TableQuery<User>();
-
-                TableQuerySegment<User> tableQueryResultAll = await table.ExecuteQuerySegmentedAsync(queryAll, null);
-
-                //get id of last user
-                foreach (User foundUser in tableQueryResultAll)
+                //get last user
+                User lastUser = await GetLastUser();
+                
+                if (lastUser != null)
                 {
-                    id = foundUser.Id;
-                    count++;
-                }
-
-                if (count > 0)
-                {
-                    id++;
+                    id = lastUser.Id + 1;
                 }
 
                 // Create a new user entity
@@ -177,67 +217,33 @@ namespace OptiflowApi.Controllers
                 // Execute the insert operation
                 await table.ExecuteAsync(insertOperation);
 
-                // Construct the query operation to find the new user
-                TableQuery<User> query = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, newUser.Email));
-
-                TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
-                foreach (User foundUser in tableQueryResult)
-                {
-                    teller++;
-                    insertedUser = foundUser;
-                }
-
-                if (teller > 0)
-                {
-                    return Ok(insertedUser);
-                }
-                else
-                {
-                    return NotFound(null);
-                }
+                //return the inserted user
+                return await FindUserByEmail(newUser.Email);
             }
         }
 
         // PUT api/users/byEmail/user@email.com
         [Route("api/users/byEmail/{email}")]
         [HttpPut]
-        public async Task<IActionResult> UpdateUserByEmail(string email, [FromBody]User user)
+        public async Task<User> UpdateUserByEmail(string email, [FromBody]User user)
         {
-            int teller = 0;
             bool exists = false;
-            User userToUpdate = new User();
-
-            // Construct the query operation to find user
-            TableQuery<User> query = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, email));
-
-            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
 
             //check if user exists
-            foreach (User foundUser in tableQueryResult)
-            {
-                teller++;
-                userToUpdate = foundUser;
-            }
+            User userToUpdate = await FindUserByEmail(email);
 
-            if (teller > 0)
+            if (userToUpdate != null)
             {
                 // Construct the query operation to check if user with the new provided e-mailaddress already exists
-                TableQuery<User> queryExists = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, user.Email));
-
-                TableQuerySegment<User> tableQueryResultExists = await table.ExecuteQuerySegmentedAsync(queryExists, null);
-
-                //compare the id of the found user with the user you want to update
-                foreach (User foundUser in tableQueryResultExists)
+                User foundUser = await FindUserByEmail(user.Email);
+                
+                if (foundUser.Id.Equals(userToUpdate.Id))
                 {
-                    if (foundUser.Id.Equals(userToUpdate.Id))
-                    {
-                        exists = false;
-                    }
-                    else
-                    {
-                        exists = true;
-                    }
+                    exists = false;
+                }
+                else
+                {
+                    exists = true;
                 }
 
                 //throw exception if user with e-mail already exists
@@ -259,53 +265,36 @@ namespace OptiflowApi.Controllers
                     // Execute the update operation
                     await table.ExecuteAsync(updateOperation);
 
-                    return Ok(updatedUser);
+                    return updatedUser;
                 }
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
         }
 
         // PUT api/users/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUserById(long id, [FromBody]User user)
+        public async Task<User> UpdateUserById(long id, [FromBody]User user)
         {
-            int teller = 0;
             bool exists = false;
-            User userToUpdate = new User();
-
-            // Construct the query operation to find user
-            TableQuery<User> query = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
-
-            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
 
             //check if user exists
-            foreach (User foundUser in tableQueryResult)
-            {
-                teller++;
-                userToUpdate = foundUser;
-            }
+            User userToUpdate = await FindUserById(id);
 
-            if (teller > 0)
+            if (userToUpdate != null)
             {
                 // Construct the query operation to check if user with the new provided e-mailaddress already exists
-                TableQuery<User> queryExists = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, user.Email));
+                User foundUser = await FindUserByEmail(user.Email);
 
-                TableQuerySegment<User> tableQueryResultExists = await table.ExecuteQuerySegmentedAsync(queryExists, null);
-
-                //compare the id of the found user with the user you want to update
-                foreach (User foundUser in tableQueryResultExists)
+                if (foundUser.Id.Equals(userToUpdate.Id))
                 {
-                    if (foundUser.Id.Equals(userToUpdate.Id))
-                    {
-                        exists = false;
-                    }
-                    else
-                    {
-                        exists = true;
-                    }
+                    exists = false;
+                }
+                else
+                {
+                    exists = true;
                 }
 
                 //throw exception if user with e-mail already exists
@@ -327,36 +316,24 @@ namespace OptiflowApi.Controllers
                     // Execute the update operation
                     await table.ExecuteAsync(updateOperation);
 
-                    return Ok(updatedUser);
+                    return updatedUser;
                 }
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
         }
 
         // DELETE api/users/byEmail/user@email.com
         [Route("api/users/byEmail/{email}")] 
         [HttpDelete]
-        public async Task<IActionResult> DeleteUserByEmail(string email)
+        public async Task<User> DeleteUserByEmail(string email)
         {
-            int teller = 0;
-            User user = new User();
-
-            // Construct the query operation
-            TableQuery<User> query = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, email));
-
-            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
             //check if user exists
-            foreach (User foundUser in tableQueryResult)
-            {
-                teller++;
-                user = foundUser;
-            }
+            User user = await FindUserByEmail(email);
 
-            if (teller > 0)
+            if (user != null)
             {
                 // Create the TableOperation object that deletes the user
                 TableOperation deleteOperation = TableOperation.Delete(user);
@@ -364,34 +341,22 @@ namespace OptiflowApi.Controllers
                 // Execute the delete operation
                 await table.ExecuteAsync(deleteOperation);
 
-                return Ok(user);
+                return user;
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
         }
 
         // DELETE api/users/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUserById(long id)
+        public async Task<User> DeleteUserById(long id)
         {
-            int teller = 0;
-            User user = new User();
-
-            // Construct the query operation
-            TableQuery<User> query = new TableQuery<User>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
-
-            TableQuerySegment<User> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
             //check if user exists
-            foreach (User foundUser in tableQueryResult)
-            {
-                teller++;
-                user = foundUser;
-            }
+            User user = await FindUserById(id);
 
-            if (teller > 0)
+            if (user != null)
             {
                 // Create the TableOperation object that deletes the user
                 TableOperation deleteOperation = TableOperation.Delete(user);
@@ -399,11 +364,11 @@ namespace OptiflowApi.Controllers
                 // Execute the delete operation
                 await table.ExecuteAsync(deleteOperation);
 
-                return Ok(user);
+                return user;
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
         }
     }

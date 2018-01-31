@@ -40,29 +40,7 @@ namespace OptiflowApi.Controllers
             await table.CreateIfNotExistsAsync();
         }
 
-        // GET api/exercises
-        [HttpGet]
-        public async Task<IActionResult> GetExercises()
-        {
-            List<Exercise> exercises = new List<Exercise>();
-
-            // Construct the query operation
-            TableQuery<Exercise> query = new TableQuery<Exercise>();
-
-            TableQuerySegment<Exercise> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
-            //add found exercise to list exercises
-            foreach (Exercise foundExercise in tableQueryResult)
-            {
-                exercises.Add(foundExercise);
-            }
-
-            return Ok(exercises);
-        }
-
-        // GET api/exercises/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetExercise(long id)
+        public async Task<Exercise> FindExercise(long id)
         {
             int teller = 0;
             Exercise exercise = new Exercise();
@@ -81,38 +59,89 @@ namespace OptiflowApi.Controllers
 
             if (teller > 0)
             {
-                return Ok(exercise);
+                return exercise;
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
+        }
+
+        public async Task<int> CountExercises()
+        {
+            int count = 0;
+            List<Exercise> exercises = await GetExercises();
+
+            foreach (Exercise exercise in exercises)
+            {
+                count++;
+            }
+
+            return count;
+        }
+
+        public async Task<Exercise> GetLastExercise()
+        {
+            Exercise lastExercise = new Exercise();
+            int count = await CountExercises();
+
+            if (count > 0)
+            {
+                List<Exercise> exercises = await GetExercises();
+
+                //get last exercise
+                foreach (Exercise exercise in exercises)
+                {
+                    lastExercise = exercise;
+                }
+
+                return lastExercise;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        // GET api/exercises
+        [HttpGet]
+        public async Task<List<Exercise>> GetExercises()
+        {
+            List<Exercise> exercises = new List<Exercise>();
+
+            // Construct the query operation
+            TableQuery<Exercise> query = new TableQuery<Exercise>();
+
+            TableQuerySegment<Exercise> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
+
+            //add found exercise to list exercises
+            foreach (Exercise foundExercise in tableQueryResult)
+            {
+                exercises.Add(foundExercise);
+            }
+
+            return exercises;
+        }
+
+        // GET api/exercises/5
+        [HttpGet("{id}")]
+        public async Task<Exercise> GetExercise(long id)
+        {
+            return await FindExercise(id);
         }
 
         // POST api/exercises
         [HttpPost]
-        public async Task<IActionResult> CreateExercise([FromBody]Exercise exercise)
+        public async Task<Exercise> CreateExercise([FromBody]Exercise exercise)
         {
-            int teller = 0;
-            int count = 0;
             long id = 0;
-            Exercise insertedExercise = new Exercise();
 
-            // Construct the query operation to get all exercises
-            TableQuery<Exercise> queryAll = new TableQuery<Exercise>();
+            //get last exercise
+            Exercise lastExercise = await GetLastExercise();
 
-            TableQuerySegment<Exercise> tableQueryResultAll = await table.ExecuteQuerySegmentedAsync(queryAll, null);
-
-            //get id of last user
-            foreach (Exercise foundExercise in tableQueryResultAll)
+            if (lastExercise != null)
             {
-                id = foundExercise.Id;
-                count++;
-            }
-
-            if (count > 0)
-            {
-                id++;
+                id = lastExercise.Id + 1;
             }
 
             // Create a new exercise entity
@@ -128,47 +157,18 @@ namespace OptiflowApi.Controllers
             // Execute the insert operation
             await table.ExecuteAsync(insertOperation);
 
-            // Construct the query operation to find the new datarecord
-            TableQuery<Exercise> query = new TableQuery<Exercise>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
-
-            TableQuerySegment<Exercise> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
-            foreach (Exercise foundExercise in tableQueryResult)
-            {
-                teller++;
-                insertedExercise = foundExercise;
-            }
-
-            if (teller > 0)
-            {
-                return Ok(insertedExercise);
-            }
-            else
-            {
-                return NotFound(null);
-            }
+            // return the inserted exercise
+            return await FindExercise(id);
         }
 
         // PUT api/exercises/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateExercise(long id, [FromBody]Exercise exercise)
+        public async Task<Exercise> UpdateExercise(long id, [FromBody]Exercise exercise)
         {
-            int teller = 0;
-            Exercise exerciseToUpdate = new Exercise();
+            //check if exercise exists
+            Exercise exerciseToUpdate = await FindExercise(id);
 
-            // Construct the query operation to find datarecord
-            TableQuery<Exercise> query = new TableQuery<Exercise>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
-
-            TableQuerySegment<Exercise> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
-            //check if datarecord exists
-            foreach (Exercise foundExercise in tableQueryResult)
-            {
-                teller++;
-                exerciseToUpdate = foundExercise;
-            }
-
-            if (teller > 0)
+            if (exerciseToUpdate != null)
             {
                 Exercise updatedExercise = exerciseToUpdate;
                 updatedExercise.Name = exercise.Name;
@@ -181,34 +181,22 @@ namespace OptiflowApi.Controllers
                 // Execute the update operation
                 await table.ExecuteAsync(updateOperation);
 
-                return Ok(updatedExercise);
+                return updatedExercise;
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
         }
 
         // DELETE api/exercises/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteExercise(long id)
+        public async Task<Exercise> DeleteExercise(long id)
         {
-            int teller = 0;
-            Exercise exercise = new Exercise();
+            //check if exercise exists
+            Exercise exercise = await FindExercise(id);
 
-            // Construct the query operation
-            TableQuery<Exercise> query = new TableQuery<Exercise>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, id.ToString()));
-
-            TableQuerySegment<Exercise> tableQueryResult = await table.ExecuteQuerySegmentedAsync(query, null);
-
-            //check if user exists
-            foreach (Exercise foundExercise in tableQueryResult)
-            {
-                teller++;
-                exercise = foundExercise;
-            }
-
-            if (teller > 0)
+            if (exercise != null)
             {
                 // Create the TableOperation object that deletes the user
                 TableOperation deleteOperation = TableOperation.Delete(exercise);
@@ -216,11 +204,11 @@ namespace OptiflowApi.Controllers
                 // Execute the delete operation
                 await table.ExecuteAsync(deleteOperation);
 
-                return Ok(exercise);
+                return exercise;
             }
             else
             {
-                return NotFound(null);
+                return null;
             }
         }
     }
