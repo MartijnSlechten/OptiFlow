@@ -11,8 +11,7 @@
 namespace Optiflow.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Tom\\Documents\\School\\Project B4 Care\\Optiflow App\\Optiflow\\Optiflow\\View" +
-        "s\\ExercisesPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\Optiflow\\Optiflow\\Views\\ExercisesPage.xaml")]
     public partial class ExercisesPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

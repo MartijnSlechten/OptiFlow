@@ -34,6 +34,21 @@ namespace OptiflowApi.Controllers
             CreateTable();
         }
 
+        public UsersController(String tablename)
+        {
+            // Retrieve the storage account from the connection string
+            storageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+
+            // Create the table client.
+            tableClient = storageAccount.CreateCloudTableClient();
+
+            // Create the CloudTable object that represents the "users" table
+            table = tableClient.GetTableReference(tablename);
+
+            // Create the table if it doesn't exist.
+            CreateTable();
+        }
+
         public async void CreateTable()
         {
             // Create the table if it doesn't exist.
@@ -135,13 +150,20 @@ namespace OptiflowApi.Controllers
         {
             User foundUser = await GetUserByEmail(email);
 
-            if (foundUser.Password.Equals(password))
+            if (foundUser == null)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                if (foundUser.Password.Equals(password))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
 
@@ -204,12 +226,12 @@ namespace OptiflowApi.Controllers
                 }
 
                 // Create a new user entity
-                User newUser = new User(id, user.FirstName, user.LastName, user.Email, user.Password);
+                User newUser = new User(id, user.FirstName, user.LastName, user.Email, Encryptor.MD5Hash(user.Password));
                 newUser.Id = id;
                 newUser.LastName = user.LastName;
                 newUser.FirstName = user.FirstName;
                 newUser.Email = user.Email;
-                newUser.Password = user.Password;
+                newUser.Password = Encryptor.MD5Hash(user.Password);
 
                 // Create the TableOperation object that inserts the user
                 TableOperation insertOperation = TableOperation.Insert(newUser);
@@ -237,13 +259,20 @@ namespace OptiflowApi.Controllers
                 // Construct the query operation to check if user with the new provided e-mailaddress already exists
                 User foundUser = await FindUserByEmail(user.Email);
                 
-                if (foundUser.Id.Equals(userToUpdate.Id))
+                if (foundUser == null)
                 {
                     exists = false;
                 }
                 else
                 {
-                    exists = true;
+                    if (foundUser.Id.Equals(userToUpdate.Id))
+                    {
+                        exists = false;
+                    }
+                    else
+                    {
+                        exists = true;
+                    }
                 }
 
                 //throw exception if user with e-mail already exists
@@ -257,7 +286,7 @@ namespace OptiflowApi.Controllers
                     updatedUser.LastName = user.LastName;
                     updatedUser.FirstName = user.FirstName;
                     updatedUser.Email = user.Email;
-                    updatedUser.Password = user.Password;
+                    updatedUser.Password = Encryptor.MD5Hash(user.Password);
 
                     // Create the TableOperation object that updates the user
                     TableOperation updateOperation = TableOperation.Replace(updatedUser);
@@ -288,13 +317,20 @@ namespace OptiflowApi.Controllers
                 // Construct the query operation to check if user with the new provided e-mailaddress already exists
                 User foundUser = await FindUserByEmail(user.Email);
 
-                if (foundUser.Id.Equals(userToUpdate.Id))
+                if (foundUser == null)
                 {
                     exists = false;
                 }
                 else
                 {
-                    exists = true;
+                    if (foundUser.Id.Equals(userToUpdate.Id))
+                    {
+                        exists = false;
+                    }
+                    else
+                    {
+                        exists = true;
+                    }
                 }
 
                 //throw exception if user with e-mail already exists
@@ -308,7 +344,7 @@ namespace OptiflowApi.Controllers
                     updatedUser.LastName = user.LastName;
                     updatedUser.FirstName = user.FirstName;
                     updatedUser.Email = user.Email;
-                    updatedUser.Password = user.Password;
+                    updatedUser.Password = Encryptor.MD5Hash(user.Password);
 
                     // Create the TableOperation object that updates the user
                     TableOperation updateOperation = TableOperation.Replace(updatedUser);
