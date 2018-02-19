@@ -27,7 +27,7 @@ namespace Optiflow.Views
                 "Device 5"
             };
 			
-			MyListView.ItemsSource = Items;
+			Devices.ItemsSource = Items;
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
