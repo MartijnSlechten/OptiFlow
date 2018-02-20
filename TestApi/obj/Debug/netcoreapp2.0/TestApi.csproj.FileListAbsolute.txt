@@ -14,3 +14,5 @@ C:\Users\Ellen\Xamarin\Optiflow-team\TestApi\obj\Debug\netcoreapp2.0\TestApi.dll
 C:\Users\Ellen\Xamarin\Optiflow-team\TestApi\obj\Debug\netcoreapp2.0\TestApi.pdb
 C:\Users\Ellen\Xamarin\Optiflow-team\TestApi\bin\Debug\netcoreapp2.0\OptiflowApi.dll
 C:\Users\Ellen\Xamarin\Optiflow-team\TestApi\bin\Debug\netcoreapp2.0\OptiflowApi.pdb
+C:\Users\Ellen\Xamarin\Optiflow-team\TestApi\bin\Debug\netcoreapp2.0\LoginApi.dll
+C:\Users\Ellen\Xamarin\Optiflow-team\TestApi\bin\Debug\netcoreapp2.0\LoginApi.pdb

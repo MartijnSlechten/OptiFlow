@@ -5450,6 +5450,20 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "LoginApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.All": "2.0.3",
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LoginApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoginApi.dll": {}
+        }
+      },
       "OptiflowApi/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -14101,6 +14115,11 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "LoginApi/1.0.0": {
+      "type": "project",
+      "path": "../LoginApi/LoginApi.csproj",
+      "msbuildProject": "../LoginApi/LoginApi.csproj"
+    },
     "OptiflowApi/1.0.0": {
       "type": "project",
       "path": "../OptiflowApi/OptiflowApi.csproj",
@@ -14109,6 +14128,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "LoginApi >= 1.0.0",
       "MSTest.TestAdapter >= 1.1.18",
       "MSTest.TestFramework >= 1.1.18",
       "Microsoft.NET.Test.Sdk >= 15.3.0",
@@ -14149,6 +14169,9 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\LoginApi\\LoginApi.csproj": {
+              "projectPath": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\LoginApi\\LoginApi.csproj"
+            },
             "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\OptiflowApi\\OptiflowApi.csproj": {
               "projectPath": "C:\\Users\\Ellen\\Xamarin\\Optiflow-team\\OptiflowApi\\OptiflowApi.csproj"
             }

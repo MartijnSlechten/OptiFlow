@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LoginApi\LoginApi.csproj" />
     <ProjectReference Include="..\OptiflowApi\OptiflowApi.csproj" />
   </ItemGroup>
 
