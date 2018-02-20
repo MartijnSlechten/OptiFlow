@@ -48,10 +48,10 @@ namespace TestApi
             }
 
             Assert.IsTrue(found);
-            Assert.AreEqual(user.FirstName, createdUser.FirstName);
-            Assert.AreEqual(user.LastName, createdUser.LastName);
-            Assert.AreEqual(user.Email, createdUser.Email);
-            Assert.AreEqual(Encryptor.MD5Hash(user.Password), createdUser.Password);
+            Assert.AreEqual(user.FirstName, foundUser.FirstName);
+            Assert.AreEqual(user.LastName, foundUser.LastName);
+            Assert.AreEqual(user.Email, foundUser.Email);
+            Assert.AreEqual(Encryptor.MD5Hash(user.Password), foundUser.Password);
         }
 
         [TestMethod]
@@ -96,10 +96,10 @@ namespace TestApi
             }
 
             Assert.IsTrue(found);
-            Assert.AreEqual(user.FirstName, createdUser.FirstName);
-            Assert.AreEqual(user.LastName, createdUser.LastName);
-            Assert.AreEqual(user.Email, createdUser.Email);
-            Assert.AreEqual(Encryptor.MD5Hash(user.Password), createdUser.Password);
+            Assert.AreEqual(user.FirstName, foundUser.FirstName);
+            Assert.AreEqual(user.LastName, foundUser.LastName);
+            Assert.AreEqual(user.Email, foundUser.Email);
+            Assert.AreEqual(Encryptor.MD5Hash(user.Password), foundUser.Password);
         }
 
         [TestMethod]
@@ -365,7 +365,7 @@ namespace TestApi
             await CleanTable();
 
             User createdUser = await usersController.CreateUser(user);
-            User foundUser = await usersController.FindUserByEmail("jan.smith@test.com");
+            User foundUser = await usersController.GetUserByEmail("jan.smith@test.com");
 
             if (foundUser == null)
             {
@@ -377,10 +377,10 @@ namespace TestApi
             }
 
             Assert.IsTrue(found);
-            Assert.AreEqual(user.FirstName, createdUser.FirstName);
-            Assert.AreEqual(user.LastName, createdUser.LastName);
-            Assert.AreEqual(user.Email, createdUser.Email);
-            Assert.AreEqual(Encryptor.MD5Hash(user.Password), createdUser.Password);
+            Assert.AreEqual(user.FirstName, foundUser.FirstName);
+            Assert.AreEqual(user.LastName, foundUser.LastName);
+            Assert.AreEqual(user.Email, foundUser.Email);
+            Assert.AreEqual(Encryptor.MD5Hash(user.Password), foundUser.Password);
         }
 
         [TestMethod]
@@ -390,7 +390,7 @@ namespace TestApi
 
             await CleanTable();
 
-            User foundUser = await usersController.FindUserByEmail("jantje.kapoentje@test.com");
+            User foundUser = await usersController.GetUserByEmail("jantje.kapoentje@test.com");
 
             if (foundUser == null)
             {
@@ -413,7 +413,7 @@ namespace TestApi
             await CleanTable();
 
             User createdUser = await usersController.CreateUser(user);
-            User foundUser = await usersController.FindUserById(0);
+            User foundUser = await usersController.GetUserById(0);
 
             if (foundUser == null)
             {
@@ -425,10 +425,10 @@ namespace TestApi
             }
 
             Assert.IsTrue(found);
-            Assert.AreEqual(user.FirstName, createdUser.FirstName);
-            Assert.AreEqual(user.LastName, createdUser.LastName);
-            Assert.AreEqual(user.Email, createdUser.Email);
-            Assert.AreEqual(Encryptor.MD5Hash(user.Password), createdUser.Password);
+            Assert.AreEqual(user.FirstName, foundUser.FirstName);
+            Assert.AreEqual(user.LastName, foundUser.LastName);
+            Assert.AreEqual(user.Email, foundUser.Email);
+            Assert.AreEqual(Encryptor.MD5Hash(user.Password), foundUser.Password);
         }
 
         [TestMethod]
@@ -438,7 +438,7 @@ namespace TestApi
 
             await CleanTable();
 
-            User foundUser = await usersController.FindUserById(5);
+            User foundUser = await usersController.GetUserById(5);
 
             if (foundUser == null)
             {
@@ -516,7 +516,7 @@ namespace TestApi
         }
 
         [TestMethod]
-        public async Task UpdateUserByEmail_WithNoExistingEmail_ReturnsNull()
+        public async Task UpdateUserByEmail_WithNotExistingEmail_ReturnsNull()
         {
             await CleanTable();
 
@@ -566,7 +566,7 @@ namespace TestApi
         }
 
         [TestMethod]
-        public async Task UpdateUserById_WithNoExistingId_ReturnsNull()
+        public async Task UpdateUserById_WithNotExistingId_ReturnsNull()
         {
             await CleanTable();
 
@@ -591,7 +591,7 @@ namespace TestApi
         }
 
         [TestMethod]
-        public async Task DeleteUserByEmail_WithNoExistingEmail_ReturnsNull()
+        public async Task DeleteUserByEmail_WithNotExistingEmail_ReturnsNull()
         {
             await CleanTable();
 
@@ -616,7 +616,7 @@ namespace TestApi
         }
 
         [TestMethod]
-        public async Task DeleteUserById_WithNoExistingId_ReturnsNull()
+        public async Task DeleteUserById_WithNotExistingId_ReturnsNull()
         {
             await CleanTable();
 
