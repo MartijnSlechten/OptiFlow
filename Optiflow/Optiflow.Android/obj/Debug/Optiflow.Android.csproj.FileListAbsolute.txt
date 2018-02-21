@@ -60,7 +60,6 @@ C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.And
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\xamarin_logo.png
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\R.cs.flag
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\uploadflags.txt
-C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csprojResolveAssemblyReference.cache
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.TestPage.xaml.g.cs
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.DevicesPage.xaml.g.cs
 C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\chart1.jpg

@@ -3,27 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Optiflow.Views.HomePage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
+        <StackLayout>
             <Label Text="Optiflow" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
             <ContentView Padding="20" VerticalOptions="FillAndExpand">
                 <Image x:Name="chart1"/>
             </ContentView>
-            <Label Text="Hints" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            <ListView x:Name="Hints" ItemsSource="{Binding HintItems}" CachingStrategy="RecycleElement">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding .}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Label Text="Updates" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            <ListView x:Name="Updates" ItemsSource="{Binding UpdateItems}" CachingStrategy="RecycleElement">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding .}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <Grid>
+                <Label Grid.Column="0" Text="Hints" FontSize="Large" HorizontalOptions="Center"/>
+                <ListView Grid.Column="0" x:Name="Hints" ItemsSource="{Binding HintItems}" CachingStrategy="RecycleElement" Margin="30">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding .}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Label Grid.Column="1" Text="Updates" FontSize="Large" HorizontalOptions="Center"/>
+                <ListView Grid.Column="1" x:Name="Updates" ItemsSource="{Binding UpdateItems}" CachingStrategy="RecycleElement" Margin="30">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding .}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>         
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
