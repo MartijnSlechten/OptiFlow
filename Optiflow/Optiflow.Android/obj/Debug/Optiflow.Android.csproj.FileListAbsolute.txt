@@ -1,0 +1,145 @@
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.pdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow.apk
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow-Signed.apk
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csprojResolveAssemblyReference.cache
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csproj.CoreCompileInputs.cache
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.App.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.MainPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.AboutPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemDetailPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemsPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.NewItemPage.xaml.g.cs
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.dll
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.pdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\bin\com.companyname.Optiflow.apk
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable-hdpi\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\layout\tabbar.xml
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\layout\toolbar.xml
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\values\styles.xml
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\res\drawable\xamarin_logo.png
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\R.cs.flag
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\uploadflags.txt
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\FormsViewGroup.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Optiflow.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Project4.0\Optiflow\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.dll
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.pdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.pdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow.apk
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow-Signed.apk
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csproj.CoreCompileInputs.cache
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.App.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.MainPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.AboutPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemDetailPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemsPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.NewItemPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.HomePage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.LoginPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.SettingsPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\bin\com.companyname.Optiflow.apk
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\layout\tabbar.xml
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\layout\toolbar.xml
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\values\styles.xml
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\xamarin_logo.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\R.cs.flag
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\uploadflags.txt
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.TestPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.DevicesPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\chart1.jpg
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon1.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon5.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon3.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon2.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon4.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\fan.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.StatsPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ExercisesPage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon10.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon9.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon8.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon7.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\res\drawable\star.png
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ExercisePage.xaml.g.cs
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\FormsViewGroup.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\Optiflow.Android.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Tom\Documents\School\Project B4 Care\Optiflow App\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.pdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow.apk
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\com.companyname.Optiflow-Signed.apk
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csprojResolveAssemblyReference.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.csproj.CoreCompileInputs.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.App.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.MainPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.AboutPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemDetailPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ItemsPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.NewItemPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.HomePage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.LoginPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.SettingsPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.TestPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.DevicesPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.StatsPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ExercisesPage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Droid.Views.ExercisePage.xaml.g.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.dll
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\Optiflow.Android.pdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\android\bin\com.companyname.Optiflow.apk
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\layout\tabbar.xml
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\layout\toolbar.xml
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\values\styles.xml
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\xamarin_logo.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\chart1.jpg
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon1.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon5.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon3.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon2.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon4.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\fan.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon10.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon9.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon8.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\icon7.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\res\drawable\star.png
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\R.cs.flag
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\uploadflags.txt
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\FormsViewGroup.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\Optiflow.Android.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\android\assets\Optiflow.Android.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Ellen\Xamarin\Optiflow-team\Optiflow\Optiflow.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb

@@ -34,6 +34,21 @@ namespace OptiflowApi.Controllers
             CreateTable();
         }
 
+        public ExercisesController(String tablename)
+        {
+            // Retrieve the storage account from the connection string
+            storageAccount = CloudStorageAccount.Parse(StorageConnectionString);
+
+            // Create the table client.
+            tableClient = storageAccount.CreateCloudTableClient();
+
+            // Create the CloudTable object that represents the "users" table
+            table = tableClient.GetTableReference(tablename);
+
+            // Create the table if it doesn't exist.
+            CreateTable();
+        }
+
         public async void CreateTable()
         {
             // Create the table if it doesn't exist.

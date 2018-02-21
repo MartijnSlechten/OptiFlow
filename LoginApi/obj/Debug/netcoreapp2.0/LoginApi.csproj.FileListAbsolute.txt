@@ -1,0 +1,11 @@
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\obj\Debug\netcoreapp2.0\LoginApi.csprojResolveAssemblyReference.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\obj\Debug\netcoreapp2.0\LoginApi.csproj.CoreCompileInputs.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\obj\Debug\netcoreapp2.0\LoginApi.AssemblyInfoInputs.cache
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\obj\Debug\netcoreapp2.0\LoginApi.AssemblyInfo.cs
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\bin\Debug\netcoreapp2.0\LoginApi.deps.json
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\bin\Debug\netcoreapp2.0\LoginApi.runtimeconfig.json
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\bin\Debug\netcoreapp2.0\LoginApi.runtimeconfig.dev.json
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\bin\Debug\netcoreapp2.0\LoginApi.dll
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\bin\Debug\netcoreapp2.0\LoginApi.pdb
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\obj\Debug\netcoreapp2.0\LoginApi.dll
+C:\Users\Ellen\Xamarin\Optiflow-team\LoginApi\obj\Debug\netcoreapp2.0\LoginApi.pdb
